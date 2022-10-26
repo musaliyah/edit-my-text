@@ -23,8 +23,8 @@ module.exports = () => {
         short_name: 'JATE',
         description: 'Text Editor',
         display: 'standalone',
-        background_color: '#1e1e1e',
-        theme_color: '#1e1e1e',
+        background_color: 'white',
+        theme_color: 'white',
         start_url: '/',
         publicPath: '/',
         fingerprints: false, 
@@ -34,8 +34,8 @@ module.exports = () => {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join('assets', 'icons')
-          }
-        ]
+          },
+        ],
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
