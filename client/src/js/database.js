@@ -23,7 +23,7 @@ export const putDb = async (content) => {
 
 
 export const getDb = async (e) => {
-  const jateDb = await openDB('jate', 1);
+  const jateDB = await openDB('jate', 1);
   const tx = jateDB.transaction('jate', 'readonly');
   const store = tx.objectStore('jate');
   const request = store.getAll();
